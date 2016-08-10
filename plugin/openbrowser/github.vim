@@ -41,7 +41,7 @@ endif
 
 command! -range=0 -bar -nargs=* -complete=file
 \   OpenGithubFile
-\   call openbrowser#github#file([<f-args>], <count>, <line1>, <line2>)
+\   call openbrowser#github#file([<f-args>], 1, line('.'), line('.'))
 
 command! -bar -nargs=*
 \   OpenGithubIssue
